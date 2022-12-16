@@ -1,0 +1,14 @@
+[
+  {
+    "type": "number",
+    "name": "articles",
+    "label": "相关日志数量",
+    "defaultValue": 10,
+    "number": {
+      "max": 100,
+      "min": 1,
+      "step": 1,
+      "unit": "篇"
+    }
+  }
+]
