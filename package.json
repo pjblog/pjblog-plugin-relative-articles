@@ -20,11 +20,9 @@
     "pjblog.configs.json"
   ],
   "scripts": {
-    "build": "npm run widget:build && npm run advance:build",
+    "build": "npm run widget:build",
     "widget:build": "rm -rf ./dist/widget && node scripts/widget.js",
-    "advance:build": "rm -rf ./dist/advance && node scripts/advance.js",
     "widget:watch": "rm -rf ./dist/widget && node scripts/widget.js -w",
-    "advance:watch": "rm -rf ./dist/advance && node scripts/advance.js --watch",
     "start": "PJBLOG_ENV=development pjblog start",
     "publish": "rm -rf .publish && node scripts/publish.js"
   },
