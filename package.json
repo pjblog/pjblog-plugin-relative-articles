@@ -1,7 +1,7 @@
 {
   "name": "pjblog-plugin-relative-articles",
   "description": "PJBlog插件之相关日志，提供日志详情页下该文章相关日志功能。",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": "https://github.com/pjblog/pjblog-plugin-relative-articles",
   "homepage": "https://npmjs.com/pjblog-plugin-relative-articles",
   "cache": "file",
