@@ -1,9 +1,9 @@
 {
   "name": "pjblog-plugin-relative-articles",
-  "description": "pjblog template plugin description",
+  "description": "PJBlog插件之相关日志，提供日志详情页下该文章相关日志功能。",
   "version": "1.0.0",
-  "repository": "https://github.com/pjblog/pjblog-template-plugin",
-  "homepage": "https://npmjs.com/pjblog-template-plugin",
+  "repository": "https://github.com/pjblog/pjblog-plugin-relative-articles",
+  "homepage": "https://npmjs.com/pjblog-plugin-relative-articles",
   "cache": "file",
   "port": 8866,
   "cookie": [
