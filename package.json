@@ -1,7 +1,7 @@
 {
   "name": "pjblog-plugin-relative-articles",
   "description": "PJBlog插件之相关日志，提供日志详情页下该文章相关日志功能。",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "repository": "https://github.com/pjblog/pjblog-plugin-relative-articles",
   "homepage": "https://npmjs.com/pjblog-plugin-relative-articles",
   "cache": "file",
@@ -44,7 +44,7 @@
   },
   "pjblog": {
     "type": "plugin",
-    "icon": "https://app-cdn.zblogcn.com/files/phpplugin/iddahe_com_schedule/logo.png-logo",
+    "icon": "https://cdn-icons-png.flaticon.com/128/64/64751.png",
     "extends": {}
   },
   "orm": {
