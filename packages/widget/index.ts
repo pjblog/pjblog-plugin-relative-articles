@@ -6,6 +6,9 @@ import { Plugin, Article } from '@pjblog/core';
 import { RelativeArticlesController } from './controller';
 import { IConfigs } from './utils';
 
+export * from './controller';
+export * from './utils';
+
 @Provider
 export default class RelativeArticle extends Plugin<IConfigs> {
   @Consumer(Logger) private readonly Logger: Logger;
@@ -50,7 +53,7 @@ export default class RelativeArticle extends Plugin<IConfigs> {
    */
   public async initialize(): Promise<void | (() => Promise<void>)> {
     // 添加路由
-    this.http.addController(this, RelativeArticlesController);
+    this.http.addController(RelativeArticlesController);
     this.logger.info('pjblog-plugin-relative-articles Initialized.');
     return async () => {
       this.http.delController(RelativeArticlesController);
