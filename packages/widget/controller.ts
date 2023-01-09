@@ -42,15 +42,15 @@ export class RelativeArticlesController extends Component<IResponse> {
 
   @Water(2)
   public async getTags() {
-    const article = this.getCache<RelativeArticlesController, 'getArticle'>('getArticle');
+    const article = this.getCache('getArticle');
     const tags = await this.tag.get(article.id);
     return tags.map(tag => tag.id);
   }
 
   @Water(3)
   public async getRelatives() {
-    const article = this.getCache<RelativeArticlesController, 'getArticle'>('getArticle');
-    const tags = this.getCache<RelativeArticlesController, 'getTags'>('getTags');
+    const article = this.getCache('getArticle');
+    const tags = this.getCache('getTags');
     if (!tags.length) return;
     this.res = await this.manager.getRepository(BlogTagRelativeEntity).createQueryBuilder('rel')
       .leftJoin(BlogArticleEntity, 'art', 'art.id=rel.aid')
